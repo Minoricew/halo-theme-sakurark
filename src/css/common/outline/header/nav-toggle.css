@@ -1,15 +1,12 @@
 .site-nav-toggle {
   display: none;
+  transform: scale(0.75);
 
   @mixin screens-md {
     transition-duration: 0.5s;
     height: 2.5rem;
     display: block;
     z-index: 10;
-    
-    &.open {
-      display: none;
-    }
 
     & .nav-toggle {
       background: 0 0;

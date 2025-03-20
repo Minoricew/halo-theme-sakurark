@@ -10,9 +10,15 @@
     </div>
 
     <p
-      th:if="${not #strings.isEmpty(theme.config.mainScreen.glitch_text)}"
+      th:if="${not #strings.isEmpty(theme.config.mainScreen.glitch_text) && theme.config.mainScreen.focus_tou == 'glitch-text'}"
       class="glitch-text"
       th:text="${theme.config.mainScreen.glitch_text}"
+    ></p>
+
+    <p
+      th:if="${not #strings.isEmpty(theme.config.mainScreen.normal_tou_text)}"
+      class="normal-text"
+      th:text="${theme.config.mainScreen.normal_tou_text}"
     ></p>
 
     <th:block

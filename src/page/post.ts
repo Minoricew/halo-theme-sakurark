@@ -168,9 +168,9 @@ export default class Post {
       const timeString = I18nFormat.secondToTimeString(seconds);
       if (window.innerWidth > 860) {
         const defaultRemind = {
-          normal: "文章篇幅适中，可以放心阅读。",
-          medium: "文章比较长，建议分段阅读。",
-          difficulty: "文章内容已经很陈旧了，也许不再适用！",
+          normal: "文章篇幅适中, 可以放心阅读。",
+          medium: "文章比较长, 建议分段阅读。",
+          difficulty: "小心长文。",
         } as { [key: string]: string };
         remind =
           sakura.getThemeConfig("post", `post_word_count_toast_${type.toLowerCase()}`, String)?.valueOf() ||
@@ -227,9 +227,9 @@ export default class Post {
     let remind = "";
     if (window.innerWidth > 860) {
       const defaultRemind = {
-        normal: "近期有所更新，请放心阅读！",
-        medium: "文章内容已经有一段时间没有更新了，也许不再适用！",
-        difficulty: "文章内容已经很陈旧了，也许不再适用！",
+        normal: "近期有所更新, 请放心阅读。",
+        medium: "文章内容已经有一段时间没有更新了, 也许不再适用...",
+        difficulty: "文章内容已经很陈旧了, 也许不再适用...",
       } as { [key: string]: string };
       remind =
         sakura.getThemeConfig("post", `post_edit_time_toast_${type.toLowerCase()}`, String)?.valueOf() ||

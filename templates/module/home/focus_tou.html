@@ -27,4 +27,12 @@
       th:text="${theme.config.mainScreen.glitch_text}"
     ></h1>
   </th:block>
+  <th:block th:if="${theme.config.mainScreen.focus_tou == 'normal-text'}">
+    <h1
+      th:if="${not #strings.isEmpty(theme.config.mainScreen.normal_tou_text)}"
+      class="center-text normal-tou-text"
+      th:attr="data-text=${theme.config.mainScreen.normal_tou_text}"
+      th:text="${theme.config.mainScreen.normal_tou_text}"
+    ></h1>
+  </th:block>
 </th:block>

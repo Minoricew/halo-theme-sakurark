@@ -6,9 +6,9 @@
   z-index: 3;
 
   & .iconify {
-    font-size: 1.75em;
+    font-size: 2.5rem;
     color: #fff;
-    transform: scale(1.5, 1) translateX(-33.34%);
+    transform: scale(1.25, 1) translateX(-33.34%);
   }
 
   @mixin screens-md {

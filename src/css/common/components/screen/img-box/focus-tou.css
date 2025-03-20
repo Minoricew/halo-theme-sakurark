@@ -16,7 +16,17 @@
   margin: 0;
   font-family: "Ubuntu", sans-serif;
   font-size: 5rem;
-  transition: background 1s;
+  transition: background-color 1s;
+}
+
+.normal-tou-text {
+  position: relative;
+  color: #ffffff;
+  overflow: hidden;
+  white-space: nowrap;
+
+  font-family: "3270", "SourceHanSansCN", monospace, serif;
+  font-weight: 300;
 }
 
 .glitch {

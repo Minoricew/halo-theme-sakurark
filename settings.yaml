@@ -1,7 +1,7 @@
 apiVersion: v1alpha1
 kind: Setting
 metadata:
-  name: theme-sakura-setting
+  name: theme-sakurark-setting
 spec:
   forms:
     - group: general
@@ -10,11 +10,11 @@ spec:
         - $formkit: color
           name: theme_skin
           label: 主题基色
-          value: "#FE9600"
+          value: "#66CCFF"
         - $formkit: select
           name: cursor_skin
           label: 鼠标风格
-          value: sakura
+          value: no_cursor
           options:
             - value: sakura
               label: 默认
@@ -143,13 +143,24 @@ spec:
               label: 头像
             - value: "glitch-text"
               label: 故障文字
+            - value: "normal-text"
+              label: 普通文字
         - $formkit: text
+          if: "$get(focus_tou).value !== 'normal-text'"
           name: glitch_text
           id: glitch_text
           key: glitch_text
           label: 聚焦故障文本
           value: Hi,Friend
-          help: 移动端：将显示在导航栏中，桌面端：该文本只有头部样式开启故障文字才能显示
+          help: 移动端：将显示在导航栏中, 桌面端：该文本只有头部样式开启故障文字才能显示
+        - $formkit: text
+          if: "$get(focus_tou).value == 'normal-text'"
+          name: normal_tou_text
+          id: normal_tou_text
+          key: normal_tou_text
+          label: 头部文本
+          value: 欢迎使用 Halo
+          help: 移动端：将显示在导航栏中, 桌面端：该文本只有头部样式开启普通文字才能显示
         - $formkit: checkbox
           name: focus_info_self_intro
           id: focus_info_self_intro
@@ -174,7 +185,7 @@ spec:
           key: focus_height
           if: "$get(head_focus).value == true"
           label: 占满全屏
-          help: 全屏显示则首屏独占全屏，非全屏则只会占一半页面
+          help: 全屏显示则首屏独占全屏, 非全屏则只会占一半页面
           value: true
         - $formkit: checkbox
           name: focus_wave
@@ -228,33 +239,31 @@ spec:
               label: 预设图标
               options:
                 - label: 微信
-                  value: wechat.png
+                  value: wechat.svg
                 - label: 微博
-                  value: weibo.png
+                  value: weibo.svg
                 - label: 腾讯 QQ
-                  value: qq.png
+                  value: qq.svg
                 - label: QQ 空间
-                  value: qzone.png
+                  value: qzone.svg
                 - label: GitHub
-                  value: github.png
-                - label: Lofter
-                  value: lofter.png
+                  value: github.svg
+                - label: GitLab
+                  value: gitlab.svg
                 - label: 哔哩哔哩
-                  value: bilibili.png
+                  value: bilibili.svg
                 - label: 网易云音乐
-                  value: wangyiyun.png
+                  value: neteasecloudmusic.svg
                 - label: Twitter
-                  value: twitter.png
+                  value: x.svg
                 - label: Facebook
-                  value: facebook.png
+                  value: facebook.svg
                 - label: Google Plus
-                  value: googleplus.png
-                - label: 简书
-                  value: jianshu.png
+                  value: googleplus.svg
                 - label: CSDN
-                  value: csdn.png
+                  value: csdn.svg
                 - label: 知乎
-                  value: zhihu.png
+                  value: zhihu.svg
                 - label: Telegram
                   value: telegram.svg
                 - label: 邮箱
@@ -374,7 +383,7 @@ spec:
           if: "$get(top_feature).value == true"
           name: feature_icon
           label: 聚焦图标
-          placeholder: 聚焦前的小图标，不填写就不显示！
+          placeholder: 聚焦前的小图标, 不填写就不显示
           value: fa:anchor
         - $formkit: text
           if: "$get(top_feature).value == true"
@@ -434,7 +443,16 @@ spec:
         - $formkit: checkbox
           name: post_share
           label: 使用文章分享
-          value: true
+          value: false
+        - $formkit: text
+          name: post_global_copyright_name
+          label: 全局文章版权信息
+          help: 将显示在文章末尾
+          value: 知识共享署名-相同方式共享 4.0 国际 (CC-BY-SA 4.0)
+        - $formkit: text
+          name: post_global_copyright_link
+          label: 全局版权许可证链接
+          value: https://creativecommons.org/licenses/by-sa/4.0/?ref=
         - $formkit: checkbox
           name: post_original_copy
           label: 复制内容增加版权声明
@@ -457,7 +475,7 @@ spec:
           key: custom_toast
           label: 自定义提示语
           value: false
-          help: 默认提示语会采用国际化方案，如果你想自定义提示语，可以开启此选项
+          help: 默认提示语会采用国际化方案, 如果你想自定义提示语, 可以开启此选项
         - $formkit: text
           if: "$get(post_word_count_toast).value == true && $get(custom_toast).value == true"
           name: post_word_count_toast_normal
@@ -677,7 +695,7 @@ spec:
         - $formkit: text
           name: rimage_other_params
           label: 第三方 API 自定义参数
-          help: 第三方 API 自定义参数，如 category=dongman 。参数会跟随在随机图 API 地址后面
+          help: 第三方 API 自定义参数, 如 category=dongman 。参数会跟随在随机图 API 地址后面
         - $formkit: select
           name: rimage_cover_lqip
           id: rimage_cover_lqip
@@ -708,7 +726,7 @@ spec:
           label: 随机图 API 资源标识变量
           validation: "required"
           value: postid
-          help: 随机图 API 资源标识变量，默认为 postid，可根据随机图 API 的需要自行设置。
+          help: 随机图 API 资源标识变量, 默认为 postid, 可根据随机图 API 的需要自行设置。
         - $formkit: checkbox
           name: rimage_cover_sheet_open
           id: rimage_cover_sheet_open
@@ -744,7 +762,7 @@ spec:
           key: rimage_cover_back_open
           label: 首页背景使用随机图
           value: false
-          help: 首页背景是否启用随机图，如果启用，则第一屏中的首页背景图片将会无效化
+          help: 首页背景是否启用随机图, 如果启用, 则第一屏中的首页背景图片将会无效化
         - $formkit: select
           if: "$get(rimage_cover_back_open).value == true"
           name: rimage_cover_back_itype
@@ -752,7 +770,7 @@ spec:
           key: rimage_cover_back_itype
           label: 背景图获取范围
           value: image
-          help: 封面图获取范围，设置之后，将从设置范围中返回图片
+          help: 封面图获取范围, 设置之后, 将从设置范围中返回图片
           options:
             - value: image
               label: 所有图片
@@ -788,8 +806,8 @@ spec:
           name: theme_change
           id: theme_change
           label: 开启主题切换
-          value: true
-          help: 所有主题的样式可以自定义，但建议默认即可
+          value: false
+          help: 所有主题的样式可以自定义, 但建议默认即可
         - $formkit: repeater
           if: "$get(theme_change).value == true"
           name: bg_themes
@@ -804,31 +822,31 @@ spec:
               bg_night: false
               bg_isdefault: true
             - bg_name: sakura
-              bg_url: /themes/theme-sakura/assets/images/themes/sakura.png
+              bg_url: /themes/halo-theme-sakurark/assets/images/themes/sakura.png
               bg_img_strategy: none
               bg_icon: fluent-emoji-high-contrast:cherry-blossom
               bg_night: false
               bg_isdefault: false
             - bg_name: gribs
-              bg_url: /themes/theme-sakura/assets/images/themes/gribs.jpg
+              bg_url: /themes/halo-theme-sakurark/assets/images/themes/gribs.jpg
               bg_img_strategy: none
               bg_icon: fa:slack
               bg_night: false
               bg_isdefault: false
             - bg_name: KAdots
-              bg_url: /themes/theme-sakura/assets/images/themes/kyotoanimation.png
+              bg_url: /themes/halo-theme-sakurark/assets/images/themes/kyotoanimation.png
               bg_img_strategy: none
               bg_icon: tabler:chart-grid-dots
               bg_night: false
               bg_isdefault: false
             - bg_name: totem
-              bg_url: /themes/theme-sakura/assets/images/themes/little-monster.png
+              bg_url: /themes/halo-theme-sakurark/assets/images/themes/little-monster.png
               bg_img_strategy: none
               bg_icon: fa:optin-monster
               bg_night: false
               bg_isdefault: false
             - bg_name: pixiv
-              bg_url: /themes/theme-sakura/assets/images/themes/star02.png
+              bg_url: /themes/halo-theme-sakurark/assets/images/themes/star02.png
               bg_img_strategy: none
               bg_icon: simple-icons:pixiv
               bg_night: false
@@ -874,7 +892,7 @@ spec:
             - $formkit: checkbox
               name: bg_night
               label: 黑夜模式
-              help: 开启后，当前主题被选中的同时也会进入黑夜模式
+              help: 开启后, 当前主题被选中的同时也会进入黑夜模式
               value: false
             - $formkit: checkbox
               name: bg_isdefault
@@ -894,12 +912,12 @@ spec:
           name: aplayer_host
           label: Meting API 地址
           value: https://api.injahow.cn/meting/
-          help: 支持 Meting 类型格式的 API，主题不保证 API 可用度，如无法使用请自行搭建。 https://github.com/injahow/meting-api
+          help: 支持 Meting 类型格式的 API, 主题不保证 API 可用度, 如无法使用请自行搭建。 https://github.com/injahow/meting-api
         - $formkit: select
           if: "$get(aplayer_float).value == true"
           name: aplayer_server
           label: 音乐服务商
-          help: 不同接口所支持的音乐服务商不同，如无法使用请自行更换
+          help: 不同接口所支持的音乐服务商不同, 如无法使用请自行更换
           value: netease
           options:
             - value: netease
@@ -955,7 +973,7 @@ spec:
           name: aplayer_autoplay
           label: 自动播放
           value: false
-          help: 由于浏览器限制，此功能可能无法生效！（也建议不要开启，会产生噪音，影响用户体验）
+          help: 由于浏览器限制, 此功能可能无法生效! (也建议不要开启, 会产生噪音, 影响用户体验)
         - $formkit: select
           if: "$get(aplayer_float).value == true"
           name: aplayer_order
@@ -1027,11 +1045,11 @@ spec:
         # - $formkit: text
         #   name: reply_mail_img
         #   label: 邮件回复模块图片
-        #   value: /themes/theme-sakura/assets/images/email/head.webp
+        #   value: /themes/halo-theme-sakurark/assets/images/email/head.webp
         - $formkit: select
           name: top_back_mode
           label: 回到顶部样式
-          value: lanyard
+          value: simplify
           options:
             - value: lanyard
               label: 挂绳
@@ -1040,16 +1058,16 @@ spec:
         - $formkit: text
           name: top_back_img
           label: 回到顶部图片
-          value: /themes/theme-sakura/assets/images/scroll.png
+          value: /themes/halo-theme-sakurark/assets/images/scroll.png
         - $formkit: text
           name: footer_logo
           label: 页脚 Logo
-          value: /themes/theme-sakura/assets/images/footer/sakura.svg
+          value: /themes/halo-theme-sakurark/assets/images/footer/sakura.svg
         - $formkit: text
           name: footer_case_number
           label: ICP 备案信息
           value: ""
-          help: 为空则不展示 ICP 备案号（建议添加）
+          help: 为空则不展示 ICP 备案号 (建议添加)
         - $formkit: text
           name: footer_ga_case_number
           label: 公安备案信息
@@ -1070,10 +1088,10 @@ spec:
           name: notice_title
           label: 公告内容
           height: 300px
-          placeholder: 公告内容，文字超出142个字节将会被滚动显示（移动端无效），一个汉字 = 3字节，一个字母 = 1字节。
+          placeholder: 公告内容, 文字超出142个字节将会被滚动显示 (移动端无效) , 一个汉字 = 3 字节, 一个字母 = 1 字节
           language: html
         - $formkit: checkbox
           name: keep_record_mode
           label: 备案模式
           value: false
-          help: 备案模式，开启之后将隐藏所有留言、评论功能
+          help: 备案模式, 开启之后将隐藏所有留言、评论功能

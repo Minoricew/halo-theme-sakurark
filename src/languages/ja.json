@@ -24,7 +24,6 @@
     "next": "Next Post",
     "visits": "{{ visit }} 回読む",
     "reward": "賞",
-    "license": "表示 - 非営利 - 継承 4.0 国際 (CC BY-NC-SA 4.0)",
     "copyright_template_html": {
       "info": "# 商用引用は著者に連絡して許可を得てください、非商用引用の場合は出典を明記してください。<br>",
       "license": "# ライセンス(License): $t(post.license)<br>",
@@ -99,12 +98,13 @@
     "title": "ページが見つからない - {{ title }}",
     "golast": "前のページに戻る",
     "gohome": "ホームページに戻る",
+    "main": "申し訳ありませんが、ページが見つからないようです...",
+    "subtitle": "リクエストされたリソースを探す際にエラーが発生しました。URIが存在しない可能性があります。",
     "search": "焦らないで、サイト内検索してみる？",
-    "search_2": "Don't worry, search in site?",
     "searchinput": "検索..."
   },
   "user": {
-    "description": "俺様はステータスなしが大好き😎",
+    "description": "...",
     "login": "ログイン",
     "has_logged": "ようこそ",
     "info": "プロフィール",

@@ -7,18 +7,17 @@ spec:
         description: 支持可预设文本的友链
         screenshot: 
         file: page_links.html
-  displayName: Sakura
+  displayName: Sakurark
   author:
-    name: LIlGG
+    name: LIlGG (Modified by Minoricew)
     website: https://lixingyong.com
-  description: Halo 2.x 版本樱花🌸主题
-  logo: /themes/theme-sakura/assets/images/search/iloli.gif
-  website: https://github.com/LIlGG/halo-theme-sakura
-  repo: https://github.com/LIlGG/halo-theme-sakura.git
-  settingName: theme-sakura-setting
-  configMapName: theme-sakura-configMap
-  # 通过 vite 环境变量 (VITE_THEME_VERSION) 配置，这里不需要配置。
-  version: 2.4.3
+  description: A Halo theme forked from LIlGG / halo-theme-sakura
+  logo: /themes/halo-theme-sakurark/assets/images/logo.png
+  website: https://github.com/Minoricew/halo-theme-sakurark
+  repo: https://github.com/Minoricew/halo-theme-sakurark.git
+  settingName: theme-sakurark-setting
+  configMapName: theme-sakurark-configMap
+  version: 0.1.0-EarlyAlpha
   require: ">=2.19.0"
 metadata:
-  name: theme-sakura
+  name: halo-theme-sakurark

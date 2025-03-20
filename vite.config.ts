@@ -6,7 +6,7 @@ import PurgeIcons from 'vite-plugin-purge-icons';
 import fs from 'fs';
 import { loadEnv } from "vite";
 
-const THEME_BASE = "/themes/theme-sakura";
+const THEME_BASE = "/themes/halo-theme-sakurark";
 const ASSETS_BASE = `/assets/dist/`;
 
 export default ({ mode }: { mode: string }) => {

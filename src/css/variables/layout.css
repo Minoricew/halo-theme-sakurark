@@ -33,23 +33,26 @@
   --first-screen-filter-images: none;
   --first-screen-background-blend-overlay: none;
   --first-screen-header-info-text-color: #eaeadf;
-  --first-screen-header-info-background-color: rgba(0, 0, 0, 0.5);
+  --first-screen-header-info-background-color: rgba(0, 0, 0, 0.6);
 
   /* header */
   --header-height: 4.6875rem;
   --yya-header-top: 0;
   --header-background: #fff;
 
+  /* 基本 */
   --body-color: #464646;
   --color: #666;
   --background-color: #fff;
   --header-user-option-hover-background-color: #fff;
+  --half-transparent-border-color: rgba(0, 0, 0, 0.5);
+  --ext-transparent-border-color: rgba(0, 0, 0, 0.125);
 
   /* 公告通知 */
   --notice-background-color: #fbfbfb50;
 
   /* 首页分割线 */
-  --home-divider-border: 1px dashed #eee;
+  --home-divider-border: 2px dashed #eee;
 
   /* 文章列表 */
   --post-list-thumb-box-shadow: 0 1px 20px -6px rgba(0, 0, 0, 0.5);
@@ -65,7 +68,6 @@
   /* 移动端控件 */
   --mobile-nav-toggle-background-color: var(--theme-color);
   --mobile-menu-text-color: #333;
-  --mobile-search-background-color: #fafafa;
 
   /* minicode */
   --minicode-color: #000;
@@ -98,9 +100,9 @@
   --background-color: #31363b;
   --first-screen-background-blend-overlay: var(--background-color);
   --first-screen-header-info-text-color: #fff;
-  --first-screen-header-info-background-color: rgba(0, 0, 0, 0.7);
+  --first-screen-header-info-background-color: rgba(0, 0, 0, 0.75);
   --notice-background-color: #222;
-  --home-divider-border: 6px dotted #535a63;
+  --home-divider-border: 2px dotted #535a63;
   --post-list-thumb-box-shadow: 0 1px 35px -8px rgba(0, 0, 0, 0.8);
   --post-list-thumb-title-color: #b0b0b0;
   --post-list-thumb-meta-color: #888;
@@ -109,7 +111,6 @@
   --widget-background-color: rgba(38, 38, 38, 0.8);
   --theme-item-background-color: #31363b;
   --mobile-menu-text-color: #eee;
-  --mobile-search-background-color: #303339;
   --entry-content-heading-color: #ccc;
   --entry-content-text-color: #ffffffcc;
   --entry-content-list-color: #ffffffcc;
@@ -120,6 +121,8 @@
   --photo-group-change-active-color: #ccc;
   --links-description-color: #b0b0b0;
   --site-content-background-color: transparent;
+  --half-transparent-border-color: rgba(255, 255, 255, 0.5);
+  --ext-transparent-border-color: rgba(255, 255, 255, 0.125);
 }
 
 .video-container {

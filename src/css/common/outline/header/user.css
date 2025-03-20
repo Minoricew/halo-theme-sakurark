@@ -7,7 +7,7 @@
   & img {
     border-radius: 100%;
     cursor: pointer;
-    height: 1.875rem;
+    height: 1.5rem;
     object-fit: cover;
   }
 
@@ -32,12 +32,12 @@
   background: var(--widget-background-color);
   width: max-content;
 
-  & .herder-user-name {
+  & .header-user-name {
     font-size: 0.75rem;
     padding: 10px;
     border-radius: 4px 4px 0 0;
 
-    & .herder-user-name-u {
+    & .header-user-name-u {
       font-weight: 700;
       font-size: 0.875rem;
       overflow: hidden;

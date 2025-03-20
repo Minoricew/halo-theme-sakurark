@@ -21,4 +21,8 @@
   &.iconify--xxlarge {
     font-size: 2em;
   }
+
+  &.iconify--extlarge {
+    font-size: 108px;
+  }
 }

@@ -1,3 +1,7 @@
+> [!CAUTION]
+>
+> 这不是原版的 [halo-theme-sakura](https://github.com/LIlGG/halo-theme-sakura), 这只是一个修改版。
+
 <h1 align="center">Sakura<img src="https://media.giphy.com/media/mGcNjsfWAjY5AEZNw6/giphy.gif" width="50"></h1>
 <p align="center">
   <a href="https://github.com/halo-dev/halo"><img alt="Halo version" src="https://img.shields.io/badge/halo-2.17.0%2B-brightgreen?style=for-the-badge" /></a>

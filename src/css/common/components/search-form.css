@@ -5,7 +5,6 @@
     animation: search-visible 0.5s;
     background-repeat: no-repeat;
     background-position: bottom right;
-    background-image: var(--search-form-background);
   }
 
   & .search-form-input {

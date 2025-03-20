@@ -2,40 +2,49 @@
 <th:block th:fragment="footer">
   <div class="footer-logo">
     <p
-      th:style="'background-image: url(' + ${theme.config.others.footer_logo ?: #theme.assets('/images/footer/sakura.svg')} + ');'"
+      th:style="'background-image: url(' + ${theme.config.others.footer_logo} + ');'"
     ></p>
   </div>
   <div class="footer-halo">
     <halo:footer />
   </div>
   <div class="footer-copyright">
-    <!--/* 请尊重作者，务必保留版权声明! */-->
+    <!--/* 知道啦... */-->
     <p>
       <span>
-        Powered
-        <span class="iconify animated" data-icon="fa:vimeo"></span>
-        by
+        const bloggingFramework = require("
         <a
           rel="me"
           target="_blank"
-          href="http://www.halo.run"
+          href="https://www.halo.run"
           title="一款现代化的开源建站 / CMS 系统。"
           aria-label="engines are supported on this website"
-          >Halo</a
         >
+          Halo
+        </a>
+        ");
       </span>
-      •
-      <span
-        >Crafted with
-        <span class="iconify" data-icon="fa-heart"></span>
-        by
+      <br />
+      <span>
+        const theme = createTheme(name="sakura", author="
         <a
           rel="me"
-          target="_blank"
           href="https://github.com/LIlGG/halo-theme-sakura"
           aria-label="the theme used by this website"
-          >LIlGG</a
-        >
+        >LIlGG</a>
+        ");
+      </span>
+      <br />
+      <span>
+        theme.authors.push({name: "
+        <a
+          href="https://github.com/Minoricew/halo-theme-sakurark"
+        >Minoricew</a>
+        ", type: "Modifier"});
+      </span>
+      <br />
+      <span>
+        bloggingFramework.use(theme);
       </span>
     </p>
   </div>

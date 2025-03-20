@@ -24,7 +24,6 @@
     "next": "Next Post",
     "visits": "{{ visit }} Views",
     "reward": "$",
-    "license": "Attribution-NonCommercial-ShareAlike 4.0 International",
     "copyright_template_html": {
       "info": "# For commercial use, please contact the author for permission. For non-commercial use, please indicate the source.<br>",
       "license": "# License: $t(post.license)<br>",
@@ -101,12 +100,13 @@
     "title": "Page Not Found - {{ title }}",
     "golast": "return to previous page",
     "gohome": "return to home page",
+    "main": "Sorry, but the page seems to be missing...",
+    "subtitle": "An error occurred while looking for the requested resource. The URI may not exist.",
     "search": "Don't worry, search in site?",
-    "search_2": "Don't worry, search in site?",
     "searchinput": "Search..."
   },
   "user": {
-    "description": "My favorite thing is to leave this blank :)",
+    "description": "...",
     "login": "login",
     "has_logged": "current logged in",
     "info": "user info",
