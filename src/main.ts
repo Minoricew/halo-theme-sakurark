@@ -486,7 +486,8 @@ export class SakuraApp implements Sakura {
     if (this.getThemeConfig("advanced", "log", Boolean)?.valueOf()) {
       console.log("finish Refreshing");
     }
-    console.log("%c Github %c", "background:#24272A; color:#ffffff", "", "https://github.com/LIlGG/halo-theme-Sakura");
+    console.log("%c Theme Sakura powered by LIlGG, Github %c", "background:#24272A; color:#ffffff", "", "https://github.com/LIlGG/halo-theme-Sakura");
+    console.log("%c Modified by Minoricew %c", "background:#66CCFF; color:#FFFFFF", "", "https://github.com/Minoricew/halo-theme-sakurark");
   }
 }
 

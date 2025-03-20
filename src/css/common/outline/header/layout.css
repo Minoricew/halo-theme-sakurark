@@ -98,7 +98,6 @@
     position: fixed;
     top: var(--yya-header-top);
     background: var(--header-background);
-    box-shadow: 0 1px 40px -8px #00000080;
   }
 
   &.sabit {
@@ -110,7 +109,6 @@
   @mixin screens-md {
     & .header-inner {
       background: transparent;
-      box-shadow: none;
     }
   }
 }

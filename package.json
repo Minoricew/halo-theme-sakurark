@@ -1,7 +1,7 @@
 {
-  "name": "halo-theme-sakura",
+  "name": "halo-theme-sakurark",
   "private": true,
-  "description": "Halo 版本的樱花🌸主题",
+  "description": "Modified version of halo-theme-sakura",
   "scripts": {
     "dev": "vite build --watch --mode development",
     "build": "tsc && vite build",
@@ -9,34 +9,30 @@
     "prettier": "prettier --write './src/**/*.{js,ts,css,json,ml,yaml,html}' './templates/**/*.html'",
     "prepare": "husky install"
   },
-  "keywords": [
-    "halo",
-    "sakura",
-    "LIlGG",
-    "takagi",
-    "theme-sakura",
-    "halo-theme",
-    "halo-theme-sakura"
-  ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/LIlGG/halo-theme-sakura"
+    "url": "https://github.com/Minoricew/halo-theme-sakurark"
   },
   "author": {
-    "name": "LIlGG",
-    "url": "https://github.com/LIlGG",
-    "email": "mail@e.lixingyong.com"
+    "name": "Minoricew",
+    "url": "https://github.com/Minoricew",
+    "email": "minorice@minorice.cc"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/LIlGG/halo-theme-sakura/issues"
+    "url": "https://github.com/Minoricew/halo-theme-sakurark/issues"
   },
-  "homepage": "https://github.com/LIlGG/halo-theme-sakura#readme",
+  "homepage": "https://github.com/Minoricew/halo-theme-sakurark#readme",
   "maintainers": [
     {
       "name": "LIlGG",
       "url": "https://github.com/LIlGG",
       "email": "mail@e.lixingyong.com"
+    },
+    {
+      "name": "Minoricew",
+      "url": "https://github.com/Minoricew",
+      "email": "minorice@minorice.cc"
     }
   ],
   "devDependencies": {

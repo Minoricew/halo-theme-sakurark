@@ -5,6 +5,7 @@
   & .site-title {
     display: flex;
     margin: 0;
+    font-size: 1.275rem;
 
     & a {
       color: var(--body-color);
@@ -34,7 +35,7 @@
 
   @mixin screens-md {
     & .site-title {
-      font-size: 1.25rem;
+      font-size: 1.15rem;
       margin-right: 0.625rem;
 
       & img {

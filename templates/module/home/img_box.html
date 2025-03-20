@@ -25,7 +25,7 @@
   >
     <img
       class="cover-bg"
-      th:src="${theme.config.mainScreen.focus_img_1 ?: #theme.assets('/images/default/hd.webp')}"
+      th:src="${theme.config.mainScreen.focus_img_1 ?: #theme.assets('/images/default/tou.webp')}"
       alt="background picture of the home page"
       width="1920"
       height="1080"
@@ -52,13 +52,17 @@
         th:if="${theme.config.mainScreen.focus_info_socials and (not #arrays.isEmpty(theme.config.sns.items))}"
       >
         <ul>
+          <!--
           <li id="bg-prev">
             <img class="flipx" th:src="@{/assets/images/next-b.svg}" alt="prev" width="28" height="28" />
           </li>
+          -->
           <th:block th:replace="~{module/home/top_social}"></th:block>
+          <!--
           <li id="bg-next">
             <img th:src="@{/assets/images/next-b.svg}" alt="next" width="28" height="28" />
           </li>
+          -->
         </ul>
       </div>
     </div>

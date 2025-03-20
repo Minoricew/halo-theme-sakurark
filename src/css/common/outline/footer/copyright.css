@@ -1,6 +1,7 @@
 .footer-copyright {
   & p {
-    font-family: "Ubuntu", sans-serif;
+    font-family: monospace;
+    font-size: x-small;
 
     & span {
       & .iconify {

@@ -10,8 +10,10 @@
   <th:block th:fragment="content">
     <div class="error-404">
       <section>
-        <div class="error-img">
-          <div class="anim-icon" id="404"></div>
+        <div class="error-main-context">
+          <span class="iconify iconify--extlarge" data-icon="material-symbols-light:nearby-error-sharp"></span>
+          <p class="error-main-title" data-i18n="notfound.main"></p>
+          <p class="error-main-subtitle" data-i18n="notfound.subtitle"></p>
         </div>
         <div class="err-button back">
           <a
@@ -33,7 +35,6 @@
         <th:block th:if="${pluginFinder.available('PluginSearchWidget', '>=1.5.0')}">
           <div class="error-search">
             <p data-i18n="notfound.search"></p>
-            <p data-i18="notfound.search_2">Don't worry, search in site?</p>
             <div class="search-box" style="display: block; width: 284px; margin: auto">
               <form method="get" action="/search" role="search">
                 <span class="iconify icon-search" data-icon="solar:magnifer-outline"> </span>
@@ -53,7 +54,6 @@
       <script>
         var the_dom = window.location.hostname;
       </script>
-      <script th:src="${#theme.assets('/js/404.js')}" type="text/javascript"></script>
       <script>
         var Poi = {
           themeBase: "[(${#theme.assets('')})]",

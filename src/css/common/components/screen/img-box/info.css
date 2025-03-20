@@ -1,5 +1,4 @@
 .header-info {
-  max-width: 30%;
   position: relative;
   margin: 0;
   font-size: 1rem;
@@ -12,6 +11,15 @@
   box-sizing: initial;
   white-space: nowrap;
   margin-top: 1.25rem;
+
+  clip-path: polygon(
+    3.75% 0%,
+    96.25% 0%,
+    100% 50%,
+    96.25% 100%,
+    3.75% 100%,
+    0% 50%
+  );
 
   &::before {
     position: absolute;

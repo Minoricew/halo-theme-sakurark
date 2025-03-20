@@ -7,6 +7,7 @@ bin/
 .externalToolBuilders/
 .tern-project
 *.bak
+templates/assets/dist
 
 #IDEA
 .idea

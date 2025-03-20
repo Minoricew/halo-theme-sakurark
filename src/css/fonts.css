@@ -1,0 +1,13 @@
+@font-face {
+  font-display: swap;
+  font-family: "SourceHanSansCN";
+  font-style: normal;
+  src: url("/themes/halo-theme-sakurark/assets/fonts/SourceHanSansCN-VF-2.otf");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "3270";
+  font-style: normal;
+  src: url("/themes/halo-theme-sakurark/assets/fonts/3270NerdFont-Regular.ttf") format("truetype");
+}
