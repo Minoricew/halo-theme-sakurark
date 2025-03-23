@@ -11,3 +11,9 @@
   font-style: normal;
   src: url("/themes/halo-theme-sakurark/assets/fonts/3270NerdFont-Regular.ttf") format("truetype");
 }
+
+@font-face {
+  font-family: "Noto Serif SC";
+  font-style: normal;
+  src: url("/themes/halo-theme-sakurark/assets/fonts/NotoSerifSC-VariableFont_wght.ttf") format("truetype");
+}
