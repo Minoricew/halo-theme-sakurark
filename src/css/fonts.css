@@ -6,5 +6,5 @@
   font-display: swap;
   font-family: "3270";
   font-style: normal;
-  src: url("https://cdnjs.minorice.moe/gh/Minoricew/halo-theme-sakurark@main/public/3270NerdFont-Regular.ttf") format("truetype");
+  src: url("/themes/halo-theme-sakurark/assets/fonts/3270NerdFont-Regular.ttf") format("truetype");
 }

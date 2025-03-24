@@ -17,7 +17,7 @@ spec:
   repo: https://github.com/Minoricew/halo-theme-sakurark.git
   settingName: theme-sakurark-setting
   configMapName: theme-sakurark-configMap
-  version: 0.1.1-EarlyAlpha-Patch-5
+  version: 0.1.1-EarlyAlpha-Patch-6
   require: ">=2.19.0"
 metadata:
   name: halo-theme-sakurark
