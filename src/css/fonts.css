@@ -1,19 +1,10 @@
-@font-face {
-  font-display: swap;
-  font-family: "SourceHanSansCN";
-  font-style: normal;
-  src: url("/themes/halo-theme-sakurark/assets/fonts/SourceHanSansCN-VF-2.otf");
-}
+@import url("https://static.zeoseven.com/zsft/288/main/result.css");
+
+@import url("https://static.zeoseven.com/zsft/285/main/result.css");
 
 @font-face {
   font-display: swap;
   font-family: "3270";
   font-style: normal;
-  src: url("/themes/halo-theme-sakurark/assets/fonts/3270NerdFont-Regular.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "Noto Serif SC";
-  font-style: normal;
-  src: url("/themes/halo-theme-sakurark/assets/fonts/NotoSerifSC-VariableFont_wght.ttf") format("truetype");
+  src: url("https://cdnjs.minorice.moe/gh/Minoricew/halo-theme-sakurark@main/public/3270NerdFont-Regular.ttf") format("truetype");
 }

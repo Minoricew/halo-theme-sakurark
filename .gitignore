@@ -8,6 +8,7 @@ bin/
 .tern-project
 *.bak
 templates/assets/dist
+.DS_Store
 
 #IDEA
 .idea
